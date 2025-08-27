@@ -5,11 +5,13 @@ import java.util.Scanner;
 class MathUtil {
     static int square(int n) {
         // TODO: n의 제곱 반환
-        return 0;
+        int square = n * n;
+        return square;
     }
     int cube(int n) {
         // TODO: n의 세제곱 반환
-        return 0;
+        int cube = n * n * n;
+        return cube;
     }
 }
 
@@ -21,5 +23,6 @@ public class Q2 {
         MathUtil util = new MathUtil();
         int cu = util.cube(n);
         // TODO: sq와 cu 출력
+        System.out.println(sq + " " + cu);
     }
 }
