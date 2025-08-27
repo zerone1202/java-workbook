@@ -8,10 +8,15 @@ class Vector2D {
     Vector2D(double x, double y) { this.x = x; this.y = y; }
     static double distance(Vector2D a, Vector2D b) {
         // TODO: 두 벡터 사이 거리 반환
-        return 0;
+        double dx = a.x - b.x;
+        double dy = a.y - b.y;
+    return Math.sqrt(dx * dx + dy * dy);
     }
+
     void add(Vector2D other) {
         // TODO: 현재 벡터에 other를 더함
+        x += other.x;
+        y += other.y;
     }
 }
 
@@ -27,5 +32,6 @@ public class Q6 {
         double dist = Vector2D.distance(v1, v2);
         v1.add(v2);
         // TODO: dist와 v1.x, v1.y 출력
+        System.out.println(dist + " " +(int) v1.x + " " +(int) v1.y);
     }
 }
