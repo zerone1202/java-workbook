@@ -5,6 +5,7 @@ class Counter {
     int id;
     Counter() {
         // TODO: count 증가 후 id에 할당
+        id = ++count;
     }
 }
 
