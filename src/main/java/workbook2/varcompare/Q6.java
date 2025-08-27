@@ -11,6 +11,8 @@ class ChatRoom {
     }
     void sendMessages(int n) {
         // TODO: messagesSent와 ChatRoom.totalUsers 증가
+        messagesSent += n;
+        ChatRoom.totalUsers++;
     }
 }
 
@@ -26,5 +28,7 @@ public class Q6 {
         u1.sendMessages(m1);
         u2.sendMessages(m2);
         // TODO: 각 사용자 이름과 messagesSent, ChatRoom.totalUsers 출력
+        System.out.println("user1 " + m1 + " " + ChatRoom.totalUsers);
+        System.out.println("user2 " + m2 + " " + ChatRoom.totalUsers);
     }
 }
